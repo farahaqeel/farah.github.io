@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+nav.ul-navbar {
+    background-color: #ede20d;
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer {
+    background-color: #ebf3179c;
+    color: rgb(16, 3, 3);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.header-content {
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-column {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.container {
+    border-radius: 15px;
+    display: flex;  
+    align-items: center;
+    padding: 20px;
+    background-color: #F4EEEE;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    min-height: 200px;
+}
+
+.nav {
+    border-radius: 100px;
+    max-width: 150px;  
+    height: auto;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.container > div {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.ul-navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    list-style-type: none;
+}
+.ul-navbar ul {
+    justify-content: flex-start;
+}
+
+.ul-navbar li {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-column {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .nav {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ul-navbar li {
+        padding: 8px 15px;
+    }
+}
+header {
+    background-image: linear-gradient(to right, #ed0a0a, #F4EEEE);
+}
+
+.a-navbar:hover {
+    color: #F4EEEE;
+    border-bottom: 2px solid #F4EEEE;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    
+}
+
